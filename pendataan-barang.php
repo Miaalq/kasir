@@ -3,7 +3,6 @@ require_once 'header.php';
 require_once '../koneksi.php';
 ?>
 <div id="layoutSidenav_content">
-  <a style="font-family: comic sans MS;">
   <main>
     <div class="container-fluid px-4">
       <h1 class="mt-4">Data Produk</h1>
@@ -15,7 +14,6 @@ require_once '../koneksi.php';
               <tr>
                 <th>No.</th>
                 <th>Nama Produk</th>
-                <th>Kode Produk</th>
                 <th>Harga Produk</th>
                 <th>Riwayat</th>
               </tr>
@@ -30,7 +28,6 @@ require_once '../koneksi.php';
                 <tr>
                   <td><?php echo $no ?></td>
                   <td><?php echo $row['nama_produk'] ?></td>
-                  <td><?php echo $row['kode produk'] ?></td>
                   <td><?php echo rupiah($row['harga']) ?></td>
                   <td>
                     <a href="pendataan-barang-edit.php?id=<?= $row['produk_id'] ?>" class="btn btn-warning btn-sm">
@@ -58,7 +55,7 @@ require_once '../koneksi.php';
 
     if ($conn->query($query_update) === TRUE) {
       echo '<script>
-          alert("Berhasil menghapus data barang");
+          alert("Sip Udah di hapus");
           window.location.href = "pendataan-barang.php";
         </script>';
       die;

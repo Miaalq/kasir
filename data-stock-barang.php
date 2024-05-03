@@ -3,21 +3,20 @@ require_once 'header.php';
 require_once '../koneksi.php';
 ?>
 <div id="layoutSidenav_content">
-  <a style="font-family: comic sans MS;">
   <main>
     <div class="container-fluid px-4">
-      <h1 class="mt-4">Data Stock Produk</h1>
+      <h1 class="mt-4">Data Stock Barang</h1>
       <div class="card mb-4 mt-5">
         <div class="card-body">
           <table id="datatablesSimple">
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Nama Produk</th>
+                <th>Nama Barang</th>
                 <th>Harga Jual</th>
                 <th>Harga Terakhir Beli</th>
                 <th>Stok Tersedia</th>
-                <th>Riwayat</th>
+                <th>Aksi</th>
               </tr>
             </thead>
             <tbody>

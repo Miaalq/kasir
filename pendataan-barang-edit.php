@@ -8,7 +8,7 @@ $row = $result->fetch_assoc();
 <div id="layoutSidenav_content">
   <main>
     <div class="container-fluid px-4">
-      <h1 class="mt-4">Pendataan Produk</h1>
+      <h1 class="mt-4">Pendataan Barang</h1>
       <div class="card mb-4">
         <div class="card-body">
           <form action="" method="POST">
@@ -19,14 +19,6 @@ $row = $result->fetch_assoc();
                 <input type="text" class="form-control" name="nama_produk" placeholder="Masukkan Nama" required value="<?php echo $row['nama_produk'] ?>">
               </div>
             </div>
-
-            <div class="row mt-2">
-              <div class="col-md-6">
-                <label class="form-label">Kode Produk</label>
-                <input type="number" class="form-control" name="kode_produk" placeholder="Masukkan Kode" required value= "<?php echo $row['kode_produk'] ?>">
-              </div>
-            </div>
-
             <div class="row mt-3">
               <div class="col-md-6">
                 <label for="password" class="form-label">Harga</label>
